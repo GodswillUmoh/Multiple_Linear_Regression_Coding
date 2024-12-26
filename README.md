@@ -16,6 +16,12 @@ You are hired as a data scientist to evaluate the correlation among the features
 |142107.34|	91391.77|	366168.42|	Florida|	166187.94|
 |131876.9	|99814.71	|362861.36	|New York	|156991.12|
 
+## Note
+We do not need to apply feature scaling here because the coefficient will compensate to put everything on the same scale. hence, we need not apply feature scaling. In multiple linear regression, there's no need apply feature scaling
+
+## Do you have to check the assumptions of multiple linear regression on the dataset all the time?
+There is no need to do that. Go ahead and use the multiple linear regression on the dataset, if it perform poorly, it means there was no correlation, you discard and try another model. If your dataset has linear relationship, it will give high performance.
+
 ## Importing the libraries
 ```python
 import numpy as np
