@@ -18,22 +18,40 @@ You are hired as a data scientist to evaluate the correlation among the features
 
 ## Importing the libraries
 ```python
+import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 ```
 
 ## Importing the dataset
 ```python
-import pandas as pd
+dataset = pd.read_csv('startups_fifty.csv')
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, -1].values
+
+print(X)
 ```
 
 ## Encoding categorical data
 ```python
-import pandas as pd
+
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+ct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [3])], remainder = 'passthrough')
+ct.fit_transform(X)
+
+#convert to array
+X = np.array(ct.fit_transform(X))
+
+print(X)
+
 ```
 
 ## Splitting the dataset into the Training set and Test set
 ```python
-import pandas as pd
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size= 0.2, random_state=0)
+
 ```
 
 ## Training the Multiple Linear Regression model on the Training set
