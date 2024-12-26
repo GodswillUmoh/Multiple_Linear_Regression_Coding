@@ -17,10 +17,18 @@ You are hired as a data scientist to evaluate the correlation among the features
 |131876.9	|99814.71	|362861.36	|New York	|156991.12|
 
 ## Note
-We do not need to apply feature scaling here because the coefficient will compensate to put everything on the same scale. hence, we need not apply feature scaling. In multiple linear regression, there's no need apply feature scaling
+> We do not need to apply feature scaling here because the coefficient will compensate to put everything on the same scale. hence, we need not apply feature scaling. In multiple linear regression, there's no need apply feature scaling
 
 ## Do you have to check the assumptions of multiple linear regression on the dataset all the time?
-There is no need to do that. Go ahead and use the multiple linear regression on the dataset, if it perform poorly, it means there was no correlation, you discard and try another model. If your dataset has linear relationship, it will give high performance.
+> There is no need to do that. Go ahead and use the multiple linear regression on the dataset, if it perform poorly, it means there was no correlation, you discard and try another model. If your dataset has linear relationship, it will give high performance.
+
+## Questions often asked in Multiple Linear Regression model building
+
+> ### In MLR, do we have to do something to avoid the dummy variable trap?
+> The answer is no because the model class takes care of that with its inbuilt function
+
+> ### Do we have to apply backward elimination or the like to select the best predictors?
+> The answer is No because the class of the MLR has inbuilt function to select the best of the P-values.
 
 ## Importing the libraries
 ```python
@@ -62,12 +70,22 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size= 0.2, random
 
 ## Training the Multiple Linear Regression model on the Training set
 ```python
-import pandas as pd
+from sklearn.linear_model import LinearRegression
+lr = LinearRegression()
+lr.fit(X_train, y_train)
 ```
+## Note:
+> Unlike the simple, you cannot visualize all multiple predictors in the graph. Two vectors can be visualized
+>E.g vectors of the ten real profit and vectors of ten predicted profit of the test set to see if the prediction is close to the real values.
 
 ## Predicting the Test set results
 ```python
-import pandas as pd
+y_pred = lr.predict(X_test)
+# To display two decimal numeric values
+np.set_printoptions(precision=2)
+#reshape helps display it vertically instead of the default horizontal display.
+print(np.concatenate((y_pred.reshape(len(y_pred), 1), y_pred.reshape(len(y_pred), 1) ), 1))
+
 ```
 
 [To view python code result in the terminal, Click Here](https://colab.research.google.com/drive/1r2h0lr7V37XiVTXk7GAs05-8OHr8G6tW#scrollTo=xNkXL1YQBiBT)
