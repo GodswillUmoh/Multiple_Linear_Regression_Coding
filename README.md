@@ -3,7 +3,7 @@
 You are hired as a data scientist to evaluate the correlation among the features used by 50 startups company. Create a model to determine whether the expenditure on the variables amounted to profit. The table contains the dataset for the 50 startups
 
 # Building_Multiple_Linear_Regression_Model
-> Note: The Dataset used here was got from SuperDataScience Training on Machine Learning.
+> Note: The Dataset used here was got from SuperDataScience dataset on Machine Learning.
 > The First Seven records of the Sample Dataset is displaced below for insight into the data
 
 ## The Dataset: It contains 50 Startups, displaying their expenditure in different areas as seen in the table.
@@ -15,3 +15,33 @@ You are hired as a data scientist to evaluate the correlation among the features
 |144372.41	|118671.85	|383199.62	|New York	|182901.99|
 |142107.34|	91391.77|	366168.42|	Florida|	166187.94|
 |131876.9	|99814.71	|362861.36	|New York	|156991.12|
+
+## Importing the libraries
+```python
+import pandas as pd
+```
+
+## Importing the dataset
+```python
+import pandas as pd
+```
+
+## Encoding categorical data
+```python
+import pandas as pd
+```
+
+## Splitting the dataset into the Training set and Test set
+```python
+import pandas as pd
+```
+
+## Training the Multiple Linear Regression model on the Training set
+```python
+import pandas as pd
+```
+
+## Predicting the Test set results
+```python
+import pandas as pd
+```
