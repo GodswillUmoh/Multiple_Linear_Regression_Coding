@@ -45,3 +45,5 @@ import pandas as pd
 ```python
 import pandas as pd
 ```
+
+[To view python code result in the terminal, Click Here](https://colab.research.google.com/drive/1r2h0lr7V37XiVTXk7GAs05-8OHr8G6tW#scrollTo=xNkXL1YQBiBT)
