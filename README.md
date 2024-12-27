@@ -1,6 +1,7 @@
 # Multiple_Linear_Regression_with_Python
 ## Question:
 You are hired as a data scientist to evaluate the correlation among the features used by 50 startups company. Create a model to determine whether the expenditure on the variables amounted to profit. The table contains the dataset for the 50 startups
+> In this scenario, we use MLR in a machine learning context to evaluate and predict profitability for 50 startup companies based on their expenditures on key variables. The dataset provides insights into whether spending patterns are correlated with profitability.
 
 # Building_Multiple_Linear_Regression_Model
 > Note: The Dataset used here was got from SuperDataScience dataset on Machine Learning.
