@@ -4,7 +4,7 @@ You are hired as a data scientist to evaluate the correlation among the features
 > In this scenario, we use MLR in a machine learning context to evaluate and predict profitability for 50 startup companies based on their expenditures on key variables. The dataset provides insights into whether spending patterns are correlated with profitability.
 
 # Building_Multiple_Linear_Regression_Model
-> Note: The Dataset used here was got from SuperDataScience dataset on Machine Learning.
+> Note: The Dataset used here was got from SuperDataScience dataset on Machine Learning..
 > The First Seven records of the Sample Dataset is displaced below for insight into the data
 
 ## The Dataset: It contains 50 Startups, displaying their expenditure in different areas as seen in the table.
